@@ -1,0 +1,22 @@
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="20" cy="20" r="18" fill="url(#logoGradient)" stroke="#6366f1" stroke-width="2"/>
+  
+  <!-- Game controller icon -->
+  <rect x="14" y="16" width="12" height="8" rx="2" fill="white"/>
+  <circle cx="16" cy="18" r="1" fill="#6366f1"/>
+  <circle cx="16" cy="22" r="1" fill="#6366f1"/>
+  <circle cx="20" cy="18" r="1" fill="#6366f1"/>
+  <circle cx="20" cy="22" r="1" fill="#6366f1"/>
+  <circle cx="24" cy="20" r="1.5" fill="#6366f1"/>
+  
+  <!-- Company name -->
+  <text x="45" y="25" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#6366f1">SilverSet</text>
+</svg>

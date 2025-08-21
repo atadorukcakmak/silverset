@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilverSet Studios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="document.getElementById('home').scrollIntoView({behavior: 'smooth'})" style="cursor: pointer;">
+                <img src="silversetLogo.png" alt="SilverSet Logo" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#games" class="nav-link">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Welcome to <span class="highlight">SilverSet</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Experience the future of gaming with cutting-edge technology and immersive gameplay
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('games').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <img src="hero-image.png" alt="Hero Image" class="hero-image">
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="particles"></div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">Discover the story behind SilverSet</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>At SilverSet Studios, our mission is simple: to make games that entertain, connect, and inspire. We want every player to feel the joy, excitement, and creativity that gaming can bring, turning ordinary moments into unforgettable adventures.
+                    </p>
+                    
+                    <h3>Our Vision</h3>
+                    <p>We envision a future where gaming is more than just entertainment—it’s a way for people to connect, grow, and create lasting memories together. By blending innovation with passion, we aim to shape experiences that players around the world will love and remember.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>...</h4>
+                            <p>Games Created</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Happy</h4>
+                            <p>Players</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>5+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Games</h2>
+                <p class="section-subtitle">Explore our collection of amazing games</p>
+            </div>
+            <div class="games-grid">
+                <div class="game-card" onclick="window.open('https://example.com/dragon-quest', '_blank')">
+                    <div class="game-image">
+                        <div class="coming-soon">
+                            <div class="coming-soon-text">Coming Soon</div>
+                            <div class="animated-dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <h3>Dragon Quest</h3>
+                        <p>Embark on an epic adventure through mystical realms filled with dragons, magic, and ancient secrets.</p>
+                        <div class="game-tags">
+                            <span class="tag">RPG</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-card" onclick="window.open('https://example.com/space-warriors', '_blank')">
+                    <div class="game-image">
+                        <div class="coming-soon">
+                            <div class="coming-soon-text">Coming Soon</div>
+                            <div class="animated-dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <h3>Space Warriors</h3>
+                        <p>Command your fleet in intense space battles across the galaxy. Strategy meets action in this epic sci-fi adventure.</p>
+                        <div class="game-tags">
+                            <span class="tag">Strategy</span>
+                            <span class="tag">Sci-Fi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-card" onclick="window.open('https://example.com/speed-racer', '_blank')">
+                    <div class="game-image">
+                        <div class="coming-soon">
+                            <div class="coming-soon-text">Coming Soon</div>
+                            <div class="animated-dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <h3>Speed Racer</h3>
+                        <p>Experience the thrill of high-speed racing with stunning graphics and realistic physics. Are you ready to become a legend?</p>
+                        <div class="game-tags">
+                            <span class="tag">Racing</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-card" onclick="window.open('https://example.com/mind-bender', '_blank')">
+                    <div class="game-image">
+                        <div class="coming-soon">
+                            <div class="coming-soon-text">Coming Soon</div>
+                            <div class="animated-dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-content">
+                        <h3>Mind Bender</h3>
+                        <p>Challenge your intellect with mind-bending puzzles that will test your logic and creativity to the limit.</p>
+                        <div class="game-tags">
+                            <span class="tag">Puzzle</span>
+                            <span class="tag">Brain Games</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch with our team</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@silversetstudios.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>123 Gaming Street, Tech City, TC 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xqalopgl" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Silverset Studios</h3>
+                    <p>Creating extraordinary gaming experiences</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    
+                        <li><a href="#home">Game 1</a></li>
+                        <li><a href="#about">Game 2</a></li>
+                        <li><a href="#games">Game 3</a></li>
+                        <li><a href="#contact">Game 4</a></li>
+                    
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SilverSet Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
