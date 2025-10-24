@@ -443,12 +443,9 @@ section::before {
 
 .game-image {
     position: relative;
-    width: 100%;
+    width: 75%;
     height: 200px;
     background-position: center;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     background: linear-gradient(135deg, #d4af37, #ffd700);
     display: flex;
     align-items: center;
