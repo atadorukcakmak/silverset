@@ -444,7 +444,6 @@ section::before {
 .game-image {
     height: 200px;
     background-position: center;
-    background-image: url("fabb.jpg");
     background: linear-gradient(135deg, #d4af37, #ffd700);
     display: flex;
     align-items: center;
