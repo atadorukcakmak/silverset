@@ -449,7 +449,6 @@ section::before {
     background-size: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    overflow: hidden;
     background: linear-gradient(135deg, #d4af37, #ffd700);
     display: flex;
     align-items: center;
