@@ -2,296 +2,346 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SilverSet Studios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SilverSet Studios | Simulation, digital twins and game systems with Unreal Engine</title>
+    <meta
+      name="description"
+      content="SilverSet Studios is an Ankara-based studio building real-time 3D systems with Unreal Engine for defense, simulation, digital twins, architecture and games. B Class supplier for HAVELSAN."
+    />
+    <link rel="canonical" href="https://www.silversetstudios.com/" />
+    <meta name="theme-color" content="#111A23" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="SilverSet Studios" />
+    <meta property="og:title" content="SilverSet Studios | Simulations, Games and Digital Twins" />
+    <meta
+      property="og:description"
+      content="Unreal Engine systems for defense, simulation, digital twins, architecture and games. B Class supplier for HAVELSAN."
+    />
+    <meta property="og:url" content="https://www.silversetstudios.com/" />
+    <meta property="og:image" content="https://www.silversetstudios.com/img/web/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" sizes="64x64" href="img/web/icon-64.png" />
+    <link rel="apple-touch-icon" href="img/web/icon-180.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="img/web/hero.webp" imagesrcset="img/web/hero-960.webp 960w, img/web/hero.webp 1672w" imagesizes="100vw" />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SilverSet Studios",
+        "url": "https://www.silversetstudios.com",
+        "logo": "https://www.silversetstudios.com/img/web/logo.png",
+        "email": "info@silversetstudios.com",
+        "telephone": "+90 539 440 7208",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kızılırmak Mah. Dumlupınar Bul. No: 9a İç Kapı No: 158",
+          "addressLocality": "Çankaya",
+          "addressRegion": "Ankara",
+          "addressCountry": "TR"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/silversetstudios",
+          "https://www.instagram.com/silversetstudios"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div
-          class="nav-logo"
-          onclick="document.getElementById('home').scrollIntoView({behavior: 'smooth'})"
-          style="cursor: pointer"
-        >
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="wrap header-inner">
+        <a href="#top" class="brand" aria-label="SilverSet Studios home">
+          <img src="img/web/logo.webp" alt="SilverSet Studios" width="549" height="154" />
+        </a>
+
+        <nav class="main-nav" id="main-nav" aria-label="Main menu">
+          <ul>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#capabilities">Capabilities</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-tools">
+          <button
+            class="menu-toggle"
+            type="button"
+            id="menu-toggle"
+            aria-expanded="false"
+            aria-controls="main-nav"
+          >
+            <span class="menu-toggle-bar"></span>
+            <span class="visually-hidden">Menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
           <img
-            src="Silversetstudios.PNG"
-            alt="SilverSet Logo"
-            class="logo-image"
+            src="img/web/hero.webp"
+            srcset="img/web/hero-960.webp 960w, img/web/hero.webp 1672w"
+            sizes="100vw"
+            alt=""
+            width="1672"
+            height="941"
+            fetchpriority="high"
           />
         </div>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#games" class="nav-link">Games</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-container">
-        <div class="hero-content">
-          <h1 class="hero-title">
-            Welcome to <span class="highlight">SilverSet Studios</span>
-          </h1>
-          <p class="hero-subtitle">
-            Experience the future of gaming with cutting-edge technology and
-            immersive gameplay
+        <div class="wrap hero-inner">
+          <p class="hero-partner">
+            <span class="partner-dot" aria-hidden="true"></span>
+            <span>B Class supplier for HAVELSAN</span>
           </p>
-          <div class="hero-buttons">
-            <button
-              class="btn btn-primary"
-              onclick="document.getElementById('games').scrollIntoView({behavior: 'smooth'})"
-            >
-              Get Started
-            </button>
-            <button
-              class="btn btn-secondary"
-              onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})"
-            >
-              Learn More
-            </button>
+          <h1 class="hero-title" id="hero-title">Simulations, Games and Digital Twins</h1>
+          <p class="hero-lead">We build Unreal Engine simulations, digital twins and interactive systems for defense, architecture and games.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-solid">Request a project call</a>
+            <a href="#capabilities" class="btn btn-line">See our capabilities</a>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="engine-logos">
-            <div class="logo-top">
-              <img
-                src="unity.png"
-                alt="Unity Engine"
-                class="engine-logo unity-logo"
-              />
-            </div>
-            <div class="logo-bottom">
-              <img src="fab.png" alt="FAB" class="engine-logo fab-logo" />
-              <img
-                src="unreal.png"
-                alt="Unreal Engine"
-                class="engine-logo unreal-logo"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-background">
-        <div class="gradient-overlay"></div>
-        <div class="particles"></div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">About Us</h2>
-          <p class="section-subtitle">Discover the story behind SilverSet</p>
+      <!-- Partners and suppliers -->
+      <section class="partners" id="partners" aria-labelledby="partners-title">
+        <div class="wrap">
+          <h2 class="partners-title" id="partners-title">Partners and suppliers</h2>
+          <!--
+            Logos live in img/partners/. data-logo is the file name (SVG or a PNG with a
+            transparent background). If the file is missing, the company name is shown instead.
+          -->
+          <ul class="partner-list">
+            <li class="partner" data-logo="xbox.png"><span class="partner-name">Microsoft Xbox</span></li>
+            <li class="partner" data-logo="bethesda.png"><span class="partner-name">Bethesda</span></li>
+            <li class="partner" data-logo="havelsan.png"><span class="partner-name">HAVELSAN</span></li>
+            <li class="partner" data-logo="aselsan.png"><span class="partner-name">ASELSAN</span></li>
+            <li class="partner" data-logo="flight-simulator.png"><span class="partner-name">Microsoft Flight Simulator</span></li>
+          </ul>
         </div>
-        <div class="about-content">
+      </section>
+
+      <!-- Partnership -->
+      <section class="partnership" id="partnership" aria-labelledby="partner-title">
+        <div class="wrap partnership-inner">
+          <p class="partner-mark" aria-hidden="true">SilverSet <span class="partner-x">×</span> HAVELSAN</p>
+          <div class="partner-text">
+            <h2 id="partner-title">B Class supplier for HAVELSAN</h2>
+            <p>SilverSet Studios is a B Class supplier for HAVELSAN, one of Türkiye's leading defense and software companies. We bring our Unreal Engine visualisation and real-time 3D expertise to HAVELSAN's training and simulation work.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Capabilities + process -->
+      <section class="method" id="capabilities" aria-labelledby="method-title">
+        <div class="wrap method-inner">
+          <div class="capabilities">
+            <h2 id="method-title">Technical capabilities</h2>
+            <ul class="cap-list">
+              <li>Unreal Engine 5 development in C++ and Blueprint</li>
+              <li>Real-time rendering with Nanite and Lumen</li>
+              <li>Vehicle, ship and flight controllers</li>
+              <li>Procedural city, building and terrain generation</li>
+              <li>Camera, sensor and surveillance views</li>
+              <li>AI behaviour and scenario systems</li>
+              <li>Operator interfaces and user screens</li>
+              <li>Performance optimisation for desktop and VR</li>
+            </ul>
+          </div>
+
+          <div class="process">
+            <h2>How we work</h2>
+            <ol class="process-list">
+              <li>
+                <h3>Discovery</h3>
+                <p>We define requirements, users and target hardware together.</p>
+              </li>
+              <li>
+                <h3>Prototype</h3>
+                <p>We validate the approach quickly with a working scene.</p>
+              </li>
+              <li>
+                <h3>Development</h3>
+                <p>We build systems and content with regular interim deliveries.</p>
+              </li>
+              <li>
+                <h3>Integration and delivery</h3>
+                <p>We connect to your existing systems and test on target hardware.</p>
+              </li>
+              <li>
+                <h3>Support</h3>
+                <p>We provide documentation, user training and maintenance.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="wrap about-inner">
+          <h2 id="about-title">A simulation team with game studio roots</h2>
           <div class="about-text">
-            <h3>Our Mission</h3>
-            <p>
-              At SilverSet Studios, our mission is simple: to make games that
-              entertain, connect, and inspire. We want every player to feel the
-              joy, excitement, and creativity that gaming can bring, turning
-              ordinary moments into unforgettable adventures.
-            </p>
-
-            <h3>Our Vision</h3>
-            <p>
-              We envision a future where gaming is more than just
-              entertainment—it’s a way for people to connect, grow, and create
-              lasting memories together. By blending innovation with passion, we
-              aim to shape experiences that players around the world will
-              love and remember.
-            </p>
-
-            <div class="stats">
-              <div class="stat-item">
-                <h4>3+</h4>
-                <p>Games in Development</p>
+            <p>SilverSet Studios is an Unreal Engine studio based in Ankara. We bring the speed, visual quality and user experience we learned making games to defense, simulation, digital twin and architecture projects.</p>
+            <p>The systems we publish on Fab show our discipline of writing reusable, maintainable code. We apply the same discipline to enterprise projects that need to last.</p>
+            <dl class="facts">
+              <div>
+                <dt>Based in</dt>
+                <dd>Çankaya, Ankara</dd>
               </div>
-              <div class="stat-item">
-                <h4>10K+</h4>
-                <p>Community Members</p>
+              <div>
+                <dt>Experience</dt>
+                <dd>5+ years in real-time 3D</dd>
               </div>
-              <div class="stat-item">
-                <h4>5+</h4>
-                <p>Years Experience</p>
+              <div>
+                <dt>Published on Fab</dt>
+                <dd>59 products</dd>
               </div>
-            </div>
+            </dl>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Games Section -->
-    <section id="games" class="games">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Our FAB Projects</h2>
-          <p class="section-subtitle">Explore our collection.</p>
+      <!-- Careers -->
+      <section class="careers" id="careers" aria-labelledby="careers-title">
+        <div class="wrap careers-inner">
+          <div class="careers-intro">
+            <h2 id="careers-title">Careers</h2>
+            <p>
+              We are growing with our work in defense and simulation. If you build real-time 3D
+              with Unreal Engine, we would like to hear from you, whether or not there is an
+              open role listed.
+            </p>
+          </div>
+          <div class="careers-body">
+            <h3>People we look for</h3>
+            <ul class="careers-roles">
+              <li>Unreal Engine developers (C++ and Blueprint)</li>
+              <li>Technical artists and shader developers</li>
+              <li>3D environment and asset artists</li>
+              <li>Gameplay and simulation systems designers</li>
+              <li>Interns and new graduates in game development</li>
+            </ul>
+            <p class="careers-how">
+              Send your CV and a link to your portfolio, GitHub or showreel. Tell us which area
+              you are interested in.
+            </p>
+            <a
+              class="btn btn-solid"
+              id="careers-mail"
+              href="mailto:info@silversetstudios.com?subject=Job%20application%20-%20SilverSet%20Studios&body=Hello%20SilverSet%20team%2C%0D%0A%0D%0AName%3A%20%0D%0AArea%20of%20interest%3A%20%0D%0APortfolio%20%2F%20GitHub%20link%3A%20%0D%0A%0D%0AI%20have%20attached%20my%20CV.%0D%0A"
+              >Email your application</a
+            >
+            <p class="careers-alt">
+              Or write to <a href="mailto:info@silversetstudios.com">info@silversetstudios.com</a>
+            </p>
+          </div>
         </div>
-        <div class="games-grid" id="games-grid">
-          <!-- Projects will be loaded dynamically from projects.json -->
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Contact Us</h2>
-          <p class="section-subtitle">Get in touch with our team</p>
-        </div>
-        <div class="contact-content">
+      <!-- Contact -->
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="wrap contact-inner">
           <div class="contact-info">
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
+            <h2 id="contact-title">Let's talk about your project</h2>
+            <p>Tell us briefly what you need and we'll get back to you within two business days. For confidential projects we can sign a non-disclosure agreement (NDA) before our first meeting.</p>
+            <dl class="contact-list">
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:info@silversetstudios.com">info@silversetstudios.com</a></dd>
               </div>
-              <div class="contact-details">
-                <h4>Email</h4>
-                <p>info@silversetstudios.com</p>
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+905394407208">+90 539 440 72 08</a></dd>
               </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-phone"></i>
+              <div>
+                <dt>Address</dt>
+                <dd>Kızılırmak Mah. Dumlupınar Bul. No: 9a İç Kapı No: 158, Çankaya / Ankara</dd>
               </div>
-              <div class="contact-details">
-                <h4>Phone</h4>
-                <p>+90 539 440 7208</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="contact-details">
-                <h4>Address</h4>
-                <p>
-                  Kızılırmak Mah. Dumlupınar Bul. No: 9a İç Kapı No: 158 Çankaya
-                  / Ankara
-                </p>
-              </div>
-            </div>
-
-            <div class="social-links">
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-link"
-                ><i class="fab fa-facebook"></i
-              ></a>
-              <a
-                href="https://www.instagram.com//silversetstudios"
-                class="social-link"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/company/silversetstudios"
-                class="social-link"
-                ><i class="fab fa-linkedin"></i
-              ></a>
+            </dl>
+            <div class="social">
+              <a href="https://www.linkedin.com/company/silversetstudios" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.83v1.54h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.14V21h-4v-5.02c0-1.2-.02-2.74-1.67-2.74-1.67 0-1.93 1.3-1.93 2.65V21h-4V9.75Z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/silversetstudios" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.58 0 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s0-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33 0 7.05.07 2.7.27.27 2.69.07 7.05 0 8.33 0 8.74 0 12s0 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 24 8.74 24 12 24s3.67 0 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s0-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67 0 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88Z"/></svg>
+              </a>
             </div>
           </div>
 
-          <div class="contact-form">
-            <form action="https://formspree.io/f/xqalopgl" method="POST">
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Your Message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">
-                Send Message
-              </button>
-            </form>
-          </div>
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xqalopgl" method="POST" novalidate>
+            <div class="field">
+              <label for="f-name">Full name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="f-org">Organisation</label>
+              <input id="f-org" name="organization" type="text" autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label for="f-sector">Area of interest</label>
+              <select id="f-sector" name="sector">
+                <option value="Defense">Defense</option>
+                <option value="Simulation">Simulation</option>
+                <option value="Digital twins">Digital twins</option>
+                <option value="Architecture">Architecture</option>
+                <option value="Games">Games and game systems</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="field field-wide">
+              <label for="f-message">About your project</label>
+              <textarea id="f-message" name="message" rows="5" required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="silversetstudios.com contact form" />
+            <div class="form-foot field-wide">
+              <button type="submit" class="btn btn-solid">Send message</button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <h3>Silverset Studios</h3>
-            <p>Creating extraordinary gaming experiences</p>
-          </div>
-          <div class="footer-links">
-            <h4>Quick Links</h4>
-
-            <li><a href="#home">Game 1</a></li>
-            <li><a href="#about">Game 2</a></li>
-            <li><a href="#games">Game 3</a></li>
-            <li><a href="#contact">Game 4</a></li>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 SilverSet Studios. All rights reserved.</p>
-        </div>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <img src="img/web/logo.webp" alt="SilverSet Studios" class="footer-logo" width="549" height="154" loading="lazy" />
+        <nav aria-label="Footer menu">
+          <ul>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#capabilities">Capabilities</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">
+          &copy; <span id="year">2026</span> SilverSet Studios.
+          <span>All rights reserved.</span>
+        </p>
+        <p class="trademark">Unreal Engine is a trademark of Epic Games, Inc.</p>
       </div>
     </footer>
 
