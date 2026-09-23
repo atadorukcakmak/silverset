@@ -421,29 +421,6 @@ p {
   color: var(--silver);
 }
 
-.partner.has-logo .partner-name {
-  position: absolute !important;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-}
-
-.partner-logo {
-  max-width: min(160px, 100%);
-  max-height: 48px;
-  width: auto;
-  height: auto;
-  /* every logo in the same silver tone */
-  filter: brightness(0) invert(0.9);
-  opacity: 0.85;
-  transition: opacity 0.2s;
-}
-.partner:hover .partner-logo {
-  opacity: 1;
-}
-
 /* ---------- Partnership ---------- */
 
 .partnership {

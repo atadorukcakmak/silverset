@@ -7,9 +7,8 @@ www.silversetstudios.com — Unreal Engine ile savunma sanayi, simülasyon, diji
 ```
 index.html      Sayfa yapısı ve tüm metinler (İngilizce)
 styles.css      Tüm stiller (renk ve yazı değişkenleri en üstte :root içinde)
-script.js       Menü, partner logoları ve iletişim formu
+script.js       Menü ve iletişim formu
 img/web/        Hero görseli, logo, favicon ve paylaşım görseli
-img/partners/   Partner ve tedarikçi logoları
 img/            Orijinal yüksek çözünürlüklü PNG'ler (sitede kullanılmıyor, arşiv)
 ```
 
@@ -17,7 +16,7 @@ img/            Orijinal yüksek çözünürlüklü PNG'ler (sitede kullanılmı
 
 Site dili İngilizcedir; tüm metinler doğrudan `index.html` içindedir.
 
-**Partner logoları:** Logolar `img/partners/` klasöründe (`xbox.png`, `bethesda.png`, `havelsan.png`, `aselsan.png`, `flight-simulator.png`). Değiştirmek için aynı adla üzerine yazın. Site tüm logoları otomatik olarak aynı gümüş tona çevirir. Dosya yoksa firma adı yazı olarak görünür. Yeni partner eklemek için `index.html` içindeki "Partners and suppliers" bölümünde bir `<li class="partner" data-logo="...">` satırı kopyalayın.
+**Partnerler:** "Partners and suppliers" bölümündeki firmalar `index.html` içinde `<li class="partner">` satırları olarak yazılıdır. Yeni firma eklemek için bir satırı kopyalayıp adı değiştirin.
 
 **Kariyer başvuruları:** "Email your application" düğmesi, konu ve şablon metniyle doldurulmuş bir e-postayı `info@silversetstudios.com` adresine açar. Farklı bir adres (ör. careers@) kullanmak için `index.html` içindeki `id="careers-mail"` bağlantısını ve altındaki adresi değiştirin.
 

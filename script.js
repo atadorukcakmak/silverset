@@ -81,25 +81,7 @@
     });
   }
 
-  /* ============ Partner logos (img/partners/) ============ */
-
-  function loadPartnerLogos() {
-    document.querySelectorAll(".partner[data-logo]").forEach((el) => {
-      const name = el.querySelector(".partner-name").textContent;
-      const img = new Image();
-      img.onload = () => {
-        img.alt = name;
-        img.className = "partner-logo";
-        el.prepend(img);
-        el.classList.add("has-logo");
-      };
-      // on error the company name simply stays visible
-      img.src = "img/partners/" + el.dataset.logo;
-    });
-  }
-
   /* ============ Init ============ */
 
   document.getElementById("year").textContent = new Date().getFullYear();
-  loadPartnerLogos();
 })();
